@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="material-design-card">
+<p>
+{{contact_form.firstName}}
+{{contact_form.lastName}}
+<br>
+
+mobile: {{contact_form.phoneNumber}}
+<br>
+{{contact_form.email}}
+<br>
+{{contact_form.githubProfile}}
+<br>
+{{contact_form.linkedinProfile}}
+<br>
+<br>
+<br>
+{{contact_form.pgpPublicKey|linebreaks}}
+</p>
+</div>
+
+{% endblock %}
+
