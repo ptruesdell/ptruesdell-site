@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<div class="material-design-card">
+<div class="material-design-card" style="width: 50%;">
 <p>
 {{contact_form.firstName}}
 {{contact_form.lastName}}
@@ -12,12 +12,17 @@ mobile: {{contact_form.phoneNumber}}
 <br>
 {{contact_form.email}}
 <br>
+<a href="http://github.com/ptruesdell">
 {{contact_form.githubProfile}}
+</a>
 <br>
+<a href="https://www.linkedin.com/in/parkertruesdell">
 {{contact_form.linkedinProfile}}
-<br>
-<br>
-<br>
+</a>
+</p>
+</div>
+<div class="material-design-card" style="font-size: 15px; width: 50%;">
+  <p>
 {{contact_form.pgpPublicKey|linebreaks}}
 </p>
 </div>

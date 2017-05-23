@@ -1,49 +1,5 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Flexbox Flex-Grow Mast</title>
-  
-  
-  
-      <link rel="stylesheet" href="../static/css/style.css">
-      <link rel="stylesheet" type="text/css" href="../static/style.css">
+{% extends 'base.html' %}
 
-
-  
-</head>
-
-<body>
-  <div class='header-card'>Parker Truesdell</div>
-  <section class="home-mast">
-  <div class="home-mast__container">
-    <div>
-      <a href="https://www.google.com">
-          <span class="link-spanner"></span>
-      </a>
-      <div class="absolute-bg" style="background-color: #3DCCC7; background-image: url('../static/img/vectorpaint.svg'); background-size: 50%;"></div>
-    </div>
-    <div class="">
-      <a href="/portfolio/">
-          <span class="link-spanner"></span>
-      </a>
-      <div class="absolute-bg" style="background-color: #68D8D6; background-image: url('../static/img/laptop.svg'); background-size: 45%;"></div>
-    </div>
-    <div class="">
-      <a href="/blog/">
-          <span class="link-spanner"></span>
-      </a>
-      <div class="absolute-bg" style="background-color: #9CEAEF;  background-image: url('../static/img/blog.svg'); background-size: 45%;"></div>
-    </div>
-    <div class="">
-      <a href="/contact/">
-          <span class="link-spanner"></span>
-      </a>
-      <div class="absolute-bg" style="background-color: #C4FFF9; background-image: url('../static/img/phone.svg'); background-size: 45%;"></div>
-    </div>
-  </div>
-</section>
-  
-  
-</body>
-</html>
+{% block content %}
+<div class="material-design-card">Hello</div>
+{% endblock %}

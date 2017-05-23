@@ -1,0 +1,5 @@
+body {
+  background: url('../img/backslant-home-top.svg'), url('../img/backslant-home-repeat.svg');
+  background-repeat: no-repeat, repeat-y;
+}
+

@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 		<link rel="stylesheet" type="text/css" href="../static/style.css">
-		<link rel="stylesheet" type="text/css" href="../static/navbar.css">
+
+
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 		<title>
 			{% block title %}{% endblock %}
@@ -16,20 +17,35 @@
 	</head>
 	
 	<body>
-<!--
-	 <nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="/portfolio/">Projects</a></li>
-    <li><a href="/blog/">Blog</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
-    -->
-    <a href="/">
-    <div class='header-card'>Parker Truesdell</div>
-    </a>
+		<section class="home-mast">
+  <div class="home-mast__container">
+    <div>
+      <a href="/">
+          <span class="link-spanner"></span>
+      </a>
+      <div class="absolute-bg" style="background-color: #3DCCC7; background-image: url('../static/img/vectorpaint.svg'); background-size: 10%;"></div>
+    </div>
+    <div class="">
+      <a href="/portfolio/">
+          <span class="link-spanner"></span>
+      </a>
+      <div class="absolute-bg" style="background-color: #68D8D6; background-image: url('../static/img/laptop.svg'); background-size: 10%;"></div>
+    </div>
+    <div class="">
+      <a href="/blog/">
+          <span class="link-spanner"></span>
+      </a>
+      <div class="absolute-bg" style="background-color: #9CEAEF;  background-image: url('../static/img/blog.svg'); background-size: 10%;"></div>
+    </div>
+    <div class="">
+      <a href="/contact/">
+          <span class="link-spanner"></span>
+      </a>
+      <div class="absolute-bg" style="background-color: #C4FFF9; background-image: url('../static/img/phone.svg'); background-size: 10%;"></div>
+    </div>
+  </div>
+</section>
+
    		<div class="content">
 		{% block content %}
 		{% endblock %}
