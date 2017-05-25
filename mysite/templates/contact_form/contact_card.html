@@ -2,30 +2,55 @@
 
 {% block content %}
 
-<div class="material-design-card" style="width: 50%;">
+<div class="card" style="width: 50%;">
 <p>
-{{contact_form.firstName}}
-{{contact_form.lastName}}
+{{contact_info.firstName}}
+{{contact_info.lastName}}
 <br>
 
-mobile: {{contact_form.phoneNumber}}
+mobile: {{contact_info.phoneNumber}}
 <br>
-{{contact_form.email}}
+{{contact_info.email}}
 <br>
 <a href="http://github.com/ptruesdell">
-{{contact_form.githubProfile}}
+{{contact_info.githubProfile}}
 </a>
 <br>
 <a href="https://www.linkedin.com/in/parkertruesdell">
-{{contact_form.linkedinProfile}}
+{{contact_info.linkedinProfile}}
 </a>
 </p>
 </div>
-<div class="material-design-card" style="font-size: 15px; width: 50%;">
+<div class="card" style="font-size: 15px; width: 50%;">
   <p>
-{{contact_form.pgpPublicKey|linebreaks}}
+{{contact_info.pgpPublicKey|linebreaks}}
 </p>
 </div>
+
+<div class="card" style="width: 50%;">
+<h1> Send a message </h1>
+<form action="" method="post">
+    {% csrf_token %}
+    Name:
+    <br>
+    {{form.senderName}}
+    <br>
+    Email:
+    <br>
+    {{form.senderEmail}}
+    <br>
+    Subject:
+    <br>
+    {{ form.subject }}
+    <br>
+    Message:
+    <br>
+    {{form.message}}
+    <br>
+    <input type="submit" value="Submit" />
+</form>
+</div>
+
 
 {% endblock %}
 

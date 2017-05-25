@@ -19,7 +19,7 @@ from django.contrib import admin
 from blog.views import index, post
 from portfolio.views import portfolio_index, project
 from home.views import home_index
-from contact_form.views import contact_form
+from contact_form.views import contact
 
 admin.autodiscover()
 
@@ -28,7 +28,7 @@ urlpatterns = [
     url(r'^$', home_index),
     url(r'^portfolio/', portfolio_index),
 	url(r'^portfolio/(?P<slug>[\w\-]+)/$', project),
-    url(r'^contact', contact_form),
+    url(r'^contact', contact),
     url(r'^blog/', index),
 		url(r'^(?P<slug>[\w\-]+)/$', post),
     
