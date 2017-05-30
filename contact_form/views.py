@@ -21,8 +21,8 @@ def contact(request):
 		    senderName = form.cleaned_data['senderName']
 		    recipients = ['parkertruesdell@gmail.com']
 		    print("trying to send email")
-		    send_mail(subject, message, fromEmail, recipients, fail_silently=False)
-		return HttpResponseRedirect('contact')
+		    send_mail(subject, message, senderEmail, recipients, fail_silently=False)
+		return HttpResponseRedirect('')
 
 	# if this is a GET request, render a blank contact form
 	else:
