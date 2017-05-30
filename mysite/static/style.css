@@ -63,6 +63,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  text-align: left;
+  font-size: 25px;
+  font-style: bold;
+  padding-top: 15px;
+  padding-left: 30px;
 }
 
 .home-mast {
@@ -86,9 +94,9 @@ body {
   transition: flex-grow 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s, -webkit-box-flex 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s, -ms-flex-positive 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 }
 .home-mast__container > *:hover {
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 .home-mast__container > *:nth-child(1):after {
   content: "";

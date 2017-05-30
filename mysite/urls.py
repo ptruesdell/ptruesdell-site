@@ -21,6 +21,10 @@ from portfolio.views import portfolio_index, project
 from home.views import home_index
 from contact_form.views import contact
 
+from django.conf import settings
+from django.conf.urls.static import static
+
+
 admin.autodiscover()
 
 urlpatterns = [
@@ -32,4 +36,4 @@ urlpatterns = [
     url(r'^blog/', index),
 		url(r'^(?P<slug>[\w\-]+)/$', post),
     
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -126,10 +126,11 @@ USE_TZ = True
 
 # Email Config
 EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend' 
+EMAIL_HOST = 'smtp.gmail.com'
 DEFAULT_FROM_EMAIL = 'testing@example.com'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = False 
+EMAIL_HOST_USER = 'parkertruesdell@gmail.com'
+EMAIL_HOST_PASSWORD = 'gethelpforyouradhd'
+EMAIL_USE_TLS = True 
 EMAIL_PORT = 1025
 
 
@@ -143,5 +144,5 @@ STATICFILES_DIRS = (
 )
 
 STATIC_ROOT = PROJECT_ROOT + '/mysite/static/'
-MEDIA_ROOT = BASE_DIR + '/media/'
+MEDIA_ROOT = BASE_DIR + 'media/'
 MEDIA_URL = '/media/'

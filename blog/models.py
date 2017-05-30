@@ -10,7 +10,7 @@ class Post(models.Model):
     slug = models.SlugField(unique=True, max_length=255)
     description = models.CharField(max_length=255)
     content = models.TextField()
-    image = models.ImageField(upload_to='./media/', default="")
+    image = models.ImageField(upload_to='images/', default="")
     published = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
 
