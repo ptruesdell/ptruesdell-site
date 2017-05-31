@@ -17,7 +17,7 @@ class HomePanel(models.Model):
 
 # Represents data to be displayed in a panel
 class ContentGroup(models.Model):
-'''
+'''	
 
 class Meta:
     def __unicode__(self):

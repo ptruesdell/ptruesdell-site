@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 
+
 {% block content %}
+
+<script src="../static/js/contact.js"></script>
+
 
 <div class="card" style="width: 50%;">
 <p>
@@ -20,12 +24,25 @@ mobile: {{contact_info.phoneNumber}}
 {{contact_info.linkedinProfile}}
 </a>
 </p>
+
+<div id="showKeyButton" style="display: block;">
+ <input type="button" name="Show PGP" value="Show PGP Public Key" onclick="togglePGPBlock()" />
+ </div>
+
+<div id="hideKeyButton" style="display:none;">
+<input type="button" name="Hide PGP" value="Hide PGP Public Key" onclick="togglePGPBlock()"/>
 </div>
-<div class="card" style="font-size: 15px; width: 50%;">
-  <p>
+</div>
+
+
+<div id="pgpPublic" style="display:none; font-size: 15px; width: 50%;" class="card" >
+<p>
 {{contact_info.pgpPublicKey|linebreaks}}
 </p>
-</div>
+ </div>
+
+
+  
 
 <div class="card" style="width: 50%;">
 <h1> Send a message </h1>
