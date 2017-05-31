@@ -10,8 +10,10 @@ var aText = new Array(
   "<span class='terminal__text__span'># # # # # # # # # # # # # # # # # #</span>",
   "<span class='terminal__text__span'>see my <a href='/portfolio/'>portfolio</a> or profile on <a href='https://github.com/ptruesdell'>github</a></span>",
   "<span class='terminal__text__span'>and</span>",
-  "<span class='terminal__text__span'>read my <a href='/blog/'>blog</a></span>"
+  "<span class='terminal__text__span'>read my <a href='/blog/'>blog</a></span>",
 );
+
+
 var iSpeed = 15; 
 var iIndex = 0; 
 var iArrLength = aText[0].length; 
